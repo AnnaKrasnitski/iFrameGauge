@@ -6,7 +6,7 @@
 	"vendor": "iProsis",
 	"license": "",
 	"id": "com.iProsis.sample.gauge",
-	"newInstancePrefix": "Gauge",
+	"newInstancePrefix": "iFrameGithub",
 	"version": "1.0",
 	"icon": "icon.png",
 	"webcomponents": [
