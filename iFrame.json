@@ -1,0 +1,65 @@
+{
+	"Access-Control-Allow-Origin":"*",
+	"name": "iFrame",
+	"description": "Gauge Custom Widget",
+	"eula": "",
+	"vendor": "iProsis",
+	"license": "",
+	"id": "com.iProsis.sample.gauge",
+	"newInstancePrefix": "Gauge",
+	"version": "1.0",
+	"icon": "icon.png",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "com-iprosis-sample-gauge",
+			"url": "https://gitlab.com/amit.pollak/sac.iprosis.gauge/blob/iFrameGauge/gauge/webcomponent.js",
+			"integrity": "sha256-79733a5c3b4a7d9ce1de65214b2b8ed03cb5023c"
+		},
+		{
+			"kind": "styling",
+			"tag": "com-iprosis-sample-gauge-aps",
+			"url": "https://gitlab.com/amit.pollak/sac.iprosis.gauge/blob/iFrameGauge/gauge/aps_webcomponent.js",
+			"integrity": "sha256-79733a5c3b4a7d9ce1de65214b2b8ed03cb5023c"
+		}
+	],
+	"properties": {
+		"urlLink": {
+			"type": "string",
+			"description": "url link",
+			"default": "https://www.walla.co.il"
+		},
+		"width": {
+			"type": "number",
+			"default": 200
+		},
+		"height": {
+			"type": "number",
+			"default": 100
+		}
+	},
+	"methods": {
+		"getValue": {
+			"returnType": "string",
+			"description": "Get the value",
+			"parameters": [],
+			"body": "return this.urlLink;"
+		},
+		"setValue": {
+			"description": "Set the value",
+			"parameters": [
+				{
+					"name": "value",
+					"type": "string",
+					"description": "The new val"
+				}
+			],
+			"body": "this.urlLink = value;"
+		}
+	},
+	"events": {
+		"onClick": {
+			"description": "Happenes when the gauge is turned"
+		}
+	}
+}
