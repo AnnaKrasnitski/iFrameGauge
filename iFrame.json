@@ -1,5 +1,5 @@
 {
-	"Access-Control-Allow-Origin":"*",
+	
 	"name": "iFrame",
 	"description": "Gauge Custom Widget",
 	"eula": "",
@@ -13,14 +13,11 @@
 		{
 			"kind": "main",
 			"tag": "com-iprosis-sample-gauge",
-			"url": "https://gitlab.com/amit.pollak/sac.iprosis.gauge/blob/iFrameGauge/gauge/webcomponent.js",
-			"integrity": "sha256-79733a5c3b4a7d9ce1de65214b2b8ed03cb5023c"
-		},
+			"url": "https://github.com/AnnaKrasnitski/iFrameGauge/blob/master/webcomponent.js"
 		{
 			"kind": "styling",
 			"tag": "com-iprosis-sample-gauge-aps",
-			"url": "https://gitlab.com/amit.pollak/sac.iprosis.gauge/blob/iFrameGauge/gauge/aps_webcomponent.js",
-			"integrity": "sha256-79733a5c3b4a7d9ce1de65214b2b8ed03cb5023c"
+			"url": "https://github.com/AnnaKrasnitski/iFrameGauge/blob/master/aps_webcomponent.js"
 		}
 	],
 	"properties": {
