@@ -9,7 +9,7 @@
 	"newInstancePrefix": "iFrameGithub",
 	"version": "1.0",
 	"icon": "knob_fixed.png",
-	"Access-Control-Allow-Origin": *,
+	"Access-Control-Allow-Origin": "*",
 	"webcomponents": [
 		{
 			"kind": "main",
