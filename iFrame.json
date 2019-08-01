@@ -14,13 +14,13 @@
 		{
 			"kind": "main",
 			"tag": "com-iprosis-sample-gauge",
-			"url": "https://github.com/AnnaKrasnitski/iFrameGauge/blob/master/webcomponent.js",
+			"url": " https://annakrasnitski.github.io/iFrameGauge/blob/master/webcomponent.js",
 			"integrity": "sha256-79733a5c3b4a7d9ce1de65214b2b8ed03cb5023c"
 		},
 		{
 			"kind": "styling",
 			"tag": "com-iprosis-sample-gauge-aps",
-			"url": "https://github.com/AnnaKrasnitski/iFrameGauge/blob/master/aps_webcomponent.js",
+			"url": " https://annakrasnitski.github.io/iFrameGauge/blob/master/aps_webcomponent.js",
 			"integrity": "sha256-79733a5c3b4a7d9ce1de65214b2b8ed03cb5023c"
 		}
 	],
