@@ -1,5 +1,3 @@
-response.setHeader("Access-Control-Allow-Origin", "*");
-
 (function()  {
 let tmpl = document.createElement('template');
 
