@@ -18,7 +18,11 @@ class IFrame extends HTMLElement {
 		this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 
 		this.style.height = "100%";
-		this._shadowRoot.addEventListener("onClick", this.onclick());
+		//this._shadowRoot.addEventListener("onClick", this.onclick());
+		this.addEventListener("click", event => {
+			var event = new Event("onClick");
+			this.dispatchEvent(event);
+			});
 		this._urlLink = "https://www.sap.com/index.html";	
 		console.log("Sap link passed");
 		//this.adjustCssClasses();
