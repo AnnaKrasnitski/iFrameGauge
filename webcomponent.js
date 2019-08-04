@@ -41,7 +41,7 @@ class IFrame extends HTMLElement {
 		this._urlLink = value;
 	};
 
-    onclick() {
+    onClick() {
 	window.open(this._urlLink);
 	console.log("window opened");
   };
