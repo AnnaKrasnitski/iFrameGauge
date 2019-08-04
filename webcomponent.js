@@ -19,7 +19,8 @@ class IFrame extends HTMLElement {
 
 		this.style.height = "100%";
 		this._shadowRoot.addEventListener("onClick", this.onclick());
-		this._urlLink = "https://www.sap.com/index.html";		
+		this._urlLink = "https://www.sap.com/index.html";	
+		console.log("Sap link passed");
 		//this.adjustCssClasses();
 	};
 
@@ -28,16 +29,20 @@ class IFrame extends HTMLElement {
 	}
 
     get urlLink() {
+	    console.log("url get");
     	return this._urlLink;
     }
     set urlLink(value) {
+	    console.log("url get");
 		this._urlLink = value;
 	};
 
     onclick() {
 	window.open(this._urlLink);
+	console.log("window opened");
   };
 }
   /* Define web component - input: tag and class */
+	console.log("define:");
   customElements.define('com-iprosis-sample-gauge', IFrame);
 })();
