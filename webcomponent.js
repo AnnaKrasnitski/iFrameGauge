@@ -19,7 +19,7 @@ class IFrame extends HTMLElement {
 
 		this.style.height = "100%";
 		this._shadowRoot.addEventListener("onClick", this.onclick());
-		this._urlLink = "https://www.walla.co.il";		
+		this._urlLink = "https://www.one.co.il/";		
 		//this.adjustCssClasses();
 	};
 
