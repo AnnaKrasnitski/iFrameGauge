@@ -36,8 +36,8 @@ class IFrame extends HTMLElement {
 
     onclick() {
 	window.open(this._urlLink);
-  }
-};
+  };
+}
   /* Define web component - input: tag and class */
   customElements.define('com-iprosis-sample-gauge', IFrame);
 })();
