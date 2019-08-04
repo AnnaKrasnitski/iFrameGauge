@@ -14,8 +14,7 @@
 		{
 			"kind": "main",
 			"tag": "com-iprosis-sample-gauge",
-			"url": "https://annakrasnitski.github.io/iFrameGauge/webcomponent.js",
-			
+			"url": "https://annakrasnitski.github.io/iFrameGauge/webcomponent.js",			
 			"integrity": ""
 		},
 		{
@@ -29,7 +28,7 @@
 		"urlLink": {
 			"type": "string",
 			"description": "url link",
-			"default": "https://www.walla.co.il"
+			"default": "https://www.one.co.il/"
 		},
 		"width": {
 			"type": "number",
@@ -61,7 +60,7 @@
 	},
 	"events": {
 		"onClick": {
-			"description": "Happenes when the gauge is turned"
+			"description": "Happenes when the frame is clicked"
 		}
 	}
 }
