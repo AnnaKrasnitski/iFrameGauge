@@ -28,10 +28,6 @@ class IFrame extends HTMLElement {
 		//this.adjustCssClasses();
 	};
 
-	adjustCssClasses() {
-		
-	}
-
     get urlLink() {
 	    console.log("url get");
     	return this._urlLink;
