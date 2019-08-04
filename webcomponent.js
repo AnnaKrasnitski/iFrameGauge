@@ -39,5 +39,5 @@ class Gauge extends HTMLElement {
   }
 };
   /* Define web component - input: tag and class */
-  customElements.define('com-iprosis-sample-gauge', Gauge);
+  customElements.define('com-iprosis-sample-gauge', iFrame);
 })();
