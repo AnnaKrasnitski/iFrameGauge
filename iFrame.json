@@ -28,7 +28,7 @@
 		"urlLink": {
 			"type": "string",
 			"description": "url link",
-			"default": "https://www.one.co.il/"
+			"default": "https://www.sap.com/index.html"
 		},
 		"width": {
 			"type": "number",
