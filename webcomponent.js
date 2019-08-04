@@ -8,7 +8,7 @@ tmpl.innerHTML = `
  
 `;
 
-class Gauge extends HTMLElement {
+class IFrame extends HTMLElement {
 
 	constructor() {
 		/*specify that we have a ShadowRoot and the cloned template needs to be appended to the Shadow DOM instead of directly to the DOM */
@@ -39,5 +39,5 @@ class Gauge extends HTMLElement {
   }
 };
   /* Define web component - input: tag and class */
-  customElements.define('com-iprosis-sample-gauge', iFrame);
+  customElements.define('com-iprosis-sample-gauge', IFrame);
 })();
