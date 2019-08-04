@@ -20,7 +20,7 @@ class IFrame extends HTMLElement {
 		this.style.height = "100%";
 		//this._shadowRoot.addEventListener("onClick", this.onclick());
 		this.addEventListener("click", event => {
-			var event = new Event("onClick");
+			var event = new Event("onclick");
 			this.dispatchEvent(event);
 			});
 		this._urlLink = "https://www.sap.com/index.html";	
@@ -41,7 +41,7 @@ class IFrame extends HTMLElement {
 		this._urlLink = value;
 	};
 
-    onClick() {
+    onclick() {
 	window.open(this._urlLink);
 	console.log("window opened");
   };
