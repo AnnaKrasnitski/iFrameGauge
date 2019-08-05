@@ -1,7 +1,6 @@
 
 (function()  {
 let tmpl = document.createElement('template');
-Access-Control-Allow-Origin:"*",
 tmpl.innerHTML = `
 		<form id="form">
 		
@@ -25,7 +24,7 @@ class GaugeAps extends HTMLElement {
 		    this._shadowRoot = this.attachShadow({mode: 'open'});
 		    this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 		    this._shadowRoot.getElementById("form").addEventListener("submit", this._submit.bind(this));
-		  };
+		  }
 
 		  _submit(e) {
 		    	e.preventDefault();
