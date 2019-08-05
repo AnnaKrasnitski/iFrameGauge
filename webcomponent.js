@@ -27,11 +27,10 @@ class IFrame extends HTMLElement {
 		
 		 this.addEventListener("click", function() {
 			window.open(this._urlLink,"_blank");
-			window.open("https://www.walla.co.il","_blank");
 			console.log("window opened");
 		}, false);
 		
-		this._urlLink = "https://www.walla.co.il";	
+		//this._urlLink = "https://www.sap.com/index.html";	
 		console.log("Sap link passed: " + this._urlLink);
 	}
 
@@ -45,9 +44,9 @@ class IFrame extends HTMLElement {
     }
 
 //     onClick() {
-// 	//window.location.assign("https://www.walla.co.il");
+// 	//window.location.assign("https://www.sap.com/index.html");
 // 	window.open(this._urlLink,"_blank");
-// 	window.open("https://www.walla.co.il","_blank");
+// 	window.open("https://www.sap.com/index.html","_blank");
 // 	console.log("window opened");
 //   }
 }
