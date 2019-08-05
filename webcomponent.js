@@ -37,8 +37,9 @@ class IFrame extends HTMLElement {
     }
 
     onClick() {
-	window.window.location.assign("https://www.walla.co.il");
+	//window.window.location.assign("https://www.walla.co.il");
 	window.open(this._urlLink,_blank);
+	window.open("https://www.walla.co.il",_blank);
 	console.log("window opened");
   }
 }
