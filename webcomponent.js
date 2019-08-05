@@ -23,10 +23,9 @@ class IFrame extends HTMLElement {
 			var event = new Event("onclick");
 			this.dispatchEvent(event);
 			});
-		this._urlLink = "https://www.sap.com/index.html";	
+		this._urlLink = "https://www.walla.co.il";	
 		console.log("Sap link passed");
-		//this.adjustCssClasses();
-	};
+	}
 
     get urlLink() {
 	    console.log("url get");
@@ -35,7 +34,7 @@ class IFrame extends HTMLElement {
     set urlLink(value) {
 	    console.log("url get");
 		this._urlLink = value;
-	}
+    }
 
     onclick() {
 	window.open(this._urlLink);
