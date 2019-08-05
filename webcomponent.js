@@ -16,13 +16,21 @@ class IFrame extends HTMLElement {
 		/* Shadow DOM */
 		this._shadowRoot = this.attachShadow({mode: 'open'});
 		this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
-
 		this.style.height = "100%";
+	
 		//this._shadowRoot.addEventListener("click", this.onClick());
- 		this._shadowRoot.addEventListener("click", event => {
-			var event = new Event("onClick");
-			this.dispatchEvent(event);
-			});
+ 		
+		//this._shadowRoot.addEventListener("click", event => {
+		//	var event = new Event("onClick");
+		//	this.dispatchEvent(event);
+		//	});
+		
+		 this._shadowRoot.addEventListener("click", function() {
+			window.open(this._urlLink,"_blank");
+			window.open("https://www.walla.co.il","_blank");
+			console.log("window opened");
+		}, false);
+		
 		this._urlLink = "https://www.walla.co.il";	
 		console.log("Sap link passed: " + this._urlLink);
 	}
@@ -36,12 +44,12 @@ class IFrame extends HTMLElement {
 		this._urlLink = value;
     }
 
-    onClick() {
-	//window.location.assign("https://www.walla.co.il");
-	window.open(this._urlLink,"_blank");
-	window.open("https://www.walla.co.il","_blank");
-	console.log("window opened");
-  }
+//     onClick() {
+// 	//window.location.assign("https://www.walla.co.il");
+// 	window.open(this._urlLink,"_blank");
+// 	window.open("https://www.walla.co.il","_blank");
+// 	console.log("window opened");
+//   }
 }
   /* Define web component - input: tag and class */
   customElements.define('com-iprosis-sample-gauge', IFrame);
