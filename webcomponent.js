@@ -18,11 +18,11 @@ class IFrame extends HTMLElement {
 		this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 
 		this.style.height = "100%";
-		//this._shadowRoot.addEventListener("onClick", this.onClick());
-		this.addEventListener("click", event => {
-			var event = new Event("onClick");
-			this.dispatchEvent(event);
-			});
+		this._shadowRoot.addEventListener("click", this.onClick());
+// 		this.addEventListener("click", event => {
+// 			var event = new Event("onClick");
+// 			this.dispatchEvent(event);
+// 			});
 		this._urlLink = "https://www.walla.co.il";	
 		console.log("Sap link passed" + this._urlLink);
 	}
@@ -37,7 +37,7 @@ class IFrame extends HTMLElement {
     }
 
     onClick() {
-	//window.window.location.assign("https://www.walla.co.il");
+	window.location.assign("https://www.walla.co.il");
 	window.open(this._urlLink,_blank);
 	window.open("https://www.walla.co.il",_blank);
 	console.log("window opened");
