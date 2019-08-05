@@ -25,7 +25,7 @@ class IFrame extends HTMLElement {
 		//	this.dispatchEvent(event);
 		//	});
 		
-		 this._shadowRoot.addEventListener("click", function() {
+		 this.addEventListener("click", function() {
 			window.open(this._urlLink,"_blank");
 			window.open("https://www.walla.co.il","_blank");
 			console.log("window opened");
