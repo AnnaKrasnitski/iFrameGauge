@@ -35,12 +35,12 @@ class IFrame extends HTMLElement {
     set urlLink(value) {
 	    console.log("url get");
 		this._urlLink = value;
-	};
+	}
 
     onclick() {
 	window.open(this._urlLink);
 	console.log("window opened");
-  };
+  }
 }
   /* Define web component - input: tag and class */
 	console.log("define:");
