@@ -19,7 +19,7 @@ class IFrame extends HTMLElement {
 
 		this.style.height = "100%";
 		//this._shadowRoot.addEventListener("click", this.onClick());
- 		this.addEventListener("click", event => {
+ 		this._shadowRoot.addEventListener("click", event => {
 			var event = new Event("onClick");
 			this.dispatchEvent(event);
 			});
