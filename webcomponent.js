@@ -18,13 +18,13 @@ class IFrame extends HTMLElement {
 		this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 
 		this.style.height = "100%";
-		this._shadowRoot.addEventListener("click", this.onClick());
-// 		this.addEventListener("click", event => {
-// 			var event = new Event("onClick");
-// 			this.dispatchEvent(event);
-// 			});
+		//this._shadowRoot.addEventListener("click", this.onClick());
+ 		this.addEventListener("click", event => {
+			var event = new Event("onClick");
+			this.dispatchEvent(event);
+			});
 		this._urlLink = "https://www.walla.co.il";	
-		console.log("Sap link passed" + this._urlLink);
+		console.log("Sap link passed: " + this._urlLink);
 	}
 
     get urlLink() {
@@ -44,6 +44,5 @@ class IFrame extends HTMLElement {
   }
 }
   /* Define web component - input: tag and class */
-	console.log("define:");
   customElements.define('com-iprosis-sample-gauge', IFrame);
 })();
