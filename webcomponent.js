@@ -28,7 +28,7 @@
 				console.log("window opened from main");
 			}, false);
 			
-			this..getElementById("frameid").addEventListener("click", function() {
+			this.getElementById("frameid").addEventListener("click", function() {
 				window.open(this._urlLink,"_blank");
 				console.log("window opened from html frame");
 			}, false);
