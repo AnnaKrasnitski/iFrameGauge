@@ -6,7 +6,7 @@
 
 	  <div class="thumbnail-container">
   		<div class="thumbnail">
-   		<iframe id="frameid" src= "https://www.walla.co.il" frameborder="0" position: absolute width: 100%  height: 100%></iframe>
+   		<iframe id="frameid" src= "https://www.walla.co.il" frameborder="0" position= "absolute" width= "100%"  height= "100%"></iframe>
   		</div>
 	</div>
 	 
