@@ -24,7 +24,7 @@
 			this._urlLink = "https://www.sap.com/index.html";	
 			console.log("Sap link passed: " + this._urlLink);
 			
-			this.window.onload=function() {
+			window.onload=function() {
 				console.log("what happens?");
 				document.getElementById("frameid").click=function() {
 					console.log("want to know");
