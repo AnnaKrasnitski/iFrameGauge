@@ -4,14 +4,11 @@
 	/* CSS within the project */
 	tmpl.innerHTML = `
 		
-		   <html>
-		   <head>
-		   <script type="text/javascript">
-		   </script>
-		   </head>
-		   <body>
-		   <iframe id="frameid" src= "https://www.walla.co.il" onLoad="click()" style="position: absolute; width:100%;  height:100%;"></iframe>
-		   </body></html>
+	
+		   <div>
+		   <iframe id="frameid" src= "https://www.walla.co.il" style="position: absolute; width:100%;  height:100%;"></iframe>
+		   </div>
+
 	 
 	`;
 	
@@ -27,12 +24,7 @@
 			this._urlLink = "https://www.sap.com/index.html";	
 			console.log("Sap link passed: " + this._urlLink);
 			
-			this.addEventListener("click", function() {
-				window.open(this._urlLink,"_blank");
-				console.log("window opened " + this._urlLink);
-			}, false);
-			
-			window.onload=function() {
+			this.window.onload=function() {
 				console.log("what happens?");
 				document.getElementById("frameid").click=function() {
 					console.log("want to know");
@@ -40,6 +32,12 @@
 				  console.log("now"+ document.getElementById("frameid").getAttribute("src"));
 				}
 		}
+			this.addEventListener("click", function() {
+				window.open(this._urlLink,"_blank");
+				console.log("window opened " + this._urlLink);
+			}, false);
+			
+
 	}
 	
 		get urlLink() {
