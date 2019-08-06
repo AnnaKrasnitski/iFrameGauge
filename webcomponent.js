@@ -5,17 +5,21 @@
 	tmpl.innerHTML = `
 
 
-   		<iframe id="frameid" src= "https://www.walla.co.il" style="position: absolute; width:100%;  height:100%;"></iframe>
-	  
-
-	  <script type="text/javascript">
-    		document.getElementById('frameid').onload = function() {
-			document.getElementsById('frameid').content.addEventListener('click', function() {
-			window.open("https://one.co.il","_blank");
-			console.log("window opened frame");
-		}, false);
-    }
-	</script>
+   		
+		   <html>
+		   <head>
+		   <script type="text/javascript">
+		   function iframeclick() {
+			document.getElementById("frameid").contentWindow.document.body.onclick = function() {
+					document.getElementById("frameid").contentWindow.open();
+				}
+			}
+			
+		   </script>
+		   </head>
+		   <body>
+		   <iframe id="frameid" src= "https://www.walla.co.il" onLoad="iframeclick()" style="position: absolute; width:100%;  height:100%;"></iframe>
+		   </body></html>
 	 
 	`;
 	
