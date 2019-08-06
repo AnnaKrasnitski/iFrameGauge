@@ -5,12 +5,12 @@
 	tmpl.innerHTML = `
 
 	  <div class="thumbnail-container">
-   		<iframe id="frameid" src= "https://www.walla.co.il" frameborder="0" style="position: absolute; width:100%;  height:100%;" onload="iframeclick()></iframe>
+   		<iframe id="frameid" src= "https://www.walla.co.il" frameborder="0" style="position: absolute; width:100%;  height:100%;"></iframe>
 	  </div>
 
 	  <script type="text/javascript">
-    		document.getElementById('my_iframe').onload = function() {
-			document.getElementsById("iframe").addEventListener("click", function() {
+    		document.getElementById('frameid').onload = function() {
+			document.getElementsById('frameid').addEventListener("click", function() {
 			window.open(this._urlLink,"_blank");
 			console.log("window opened frame");
 		}, false);
