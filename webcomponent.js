@@ -5,7 +5,7 @@
 	tmpl.innerHTML = `
 
 	  <div class="thumbnail-container">
-   		<iframe id="frameid" src= "https://www.walla.co.il" frameborder="0" style="position: absolute; width:100%;  height:100%;" onclick= ></iframe>
+   		<iframe id="frameid" src= "https://www.walla.co.il" frameborder="0" style="position: absolute; width:100%;  height:100%;" onclick= "replyClick()"></iframe>
 	  </div>
 	 
 	`;
@@ -25,10 +25,12 @@
 				console.log("window opened");
 			}, false);
 
-			document.getElementsByTagName("iframe").addEventListener("click", function() {
-				window.open(this._urlLink,"_blank");
-				console.log("window opened frame");
-			}, false);
+			
+
+			// document.getElementsById("iframe").addEventListener("click", function() {
+			// 	window.open(this._urlLink,"_blank");
+			// 	console.log("window opened frame");
+			// }, false);
 			
 			//this._urlLink = "https://www.sap.com/index.html";	
 			console.log("Sap link passed: " + this._urlLink);
@@ -43,7 +45,10 @@
 			this._urlLink = value;
 		}
 	
-	
+		replyClick(){
+			window.open(this._urlLink,"_blank");
+			console.log("window opened frame");
+		}
 	}
 	  /* Define web component - input: tag and class */
 	  customElements.define('com-iprosis-sample-gauge', IFrame);
