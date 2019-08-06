@@ -25,7 +25,7 @@
 				console.log("window opened");
 			}, false);
 
-			document.getElementById("frameid").addEventListener("click", function() {
+			document.getElementsByTagName("iframe").addEventListener("click", function() {
 				window.open(this._urlLink,"_blank");
 				console.log("window opened frame");
 			}, false);
