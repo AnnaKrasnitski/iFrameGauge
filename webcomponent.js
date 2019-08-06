@@ -3,12 +3,14 @@
 	
 	/* CSS within the project */
 	tmpl.innerHTML = `
-		
-	
+		   <html>
+		   <head>
+		   <script type="text/javascript">
+		   </script>
+		   </head>
+		   <body>
 		   <iframe id="frameid" src= "https://www.walla.co.il" style="position: absolute; width:100%;  height:100%;"></iframe>
-
-
-	 
+		   </body></html>	 
 	`;
 	
 	class IFrame extends HTMLElement {
