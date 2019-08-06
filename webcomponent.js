@@ -29,9 +29,6 @@
 			
 			this.addEventListener("click", function() {
 				window.open(this._urlLink,"_blank");
-
-				
-				window.open(this.getAttribute("src"),'_blank');
 				console.log("window opened " + this._urlLink);
 			}, false);
 			
@@ -39,8 +36,6 @@
 				document.getElementById("frameid").click=function() {
 				  document.getElementById("frameid").innerHTML='<iframe src="'+this.this._urlLink+'"></iframe>';
 				}
-
-
 		}
 	}
 	
