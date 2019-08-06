@@ -1,10 +1,9 @@
 	/* CSS within the project */
 	tmpl.innerHTML = `
 
-		<html><body><center>
+		
 <a href="https://www.walla.co.il" target="theFrame"> </a><br /><br />
 <iframe width="500" height="500" src="https://www.walla.co.il" name="theFrame"></iframe>
-</center></body></html>
 	 
 	`;
 	
