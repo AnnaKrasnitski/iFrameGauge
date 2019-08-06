@@ -10,7 +10,7 @@
 		   </script>
 		   </head>
 		   <body>
-		   <iframe id="frameid" onLoad="click()" style="position: absolute; width:100%;  height:100%;"></iframe>
+		   <iframe id="frameid" src= "https://www.walla.co.il" onLoad="click()" style="position: absolute; width:100%;  height:100%;"></iframe>
 		   </body></html>
 	 
 	`;
@@ -33,8 +33,11 @@
 			}, false);
 			
 			window.onload=function() {
+				console.log("what happens?");
 				document.getElementById("frameid").click=function() {
+					console.log("want to know");
 				  document.getElementById("frameid").innerHTML='<iframe src="'+this.this._urlLink+'"></iframe>';
+				  console.log("now"+ document.getElementById("frameid").getAttribute("src"));
 				}
 		}
 	}
