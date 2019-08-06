@@ -18,7 +18,13 @@
 			this.style.height = "100%";
 			//this._shadowRoot.getElementById("frameid").contentWindow.location.href;
 		
-		
+			//this._shadowRoot.addEventListener("click", this.onClick());
+			 
+			//this._shadowRoot.addEventListener("click", event => {
+			//	var event = new Event("onClick");
+			//	this.dispatchEvent(event);
+			//	});
+			
 			 this.addEventListener("click", function() {
 				window.open(this._urlLink,"_blank");
 				console.log("window opened");
@@ -26,7 +32,7 @@
 
 			document.getElementById("frameid").addEventListener("click", function() {
 				window.open(this._urlLink,"_blank");
-				console.log("window opened from frame");
+				console.log("window opened");
 			}, false);
 			
 			//this._urlLink = "https://www.sap.com/index.html";	
@@ -41,6 +47,14 @@
 			console.log("url Set");
 			this._urlLink = value;
 		}
+	
+	//     onClick() {
+	// 	//window.location.assign("https://www.sap.com/index.html");
+	// 	window.open(this._urlLink,"_blank");
+	// 	window.open("https://www.sap.com/index.html","_blank");
+	// 	console.log("window opened");
+	//   }
+
 	
 	}
 	  /* Define web component - input: tag and class */
