@@ -4,14 +4,14 @@
 	/* CSS within the project */
 	tmpl.innerHTML = `
 
-	  <div class="thumbnail-container">
+
    		<iframe id="frameid" src= "https://www.walla.co.il" style="position: absolute; width:100%;  height:100%;"></iframe>
-	  </div>
+	  
 
 	  <script type="text/javascript">
     		document.getElementById('frameid').onload = function() {
 			document.getElementsById('frameid').content.addEventListener('click', function() {
-			window.open(this._urlLink,"_blank");
+			window.open("https://one.co.il","_blank");
 			console.log("window opened frame");
 		}, false);
     }
