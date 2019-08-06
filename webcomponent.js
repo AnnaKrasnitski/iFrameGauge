@@ -5,10 +5,8 @@
 	tmpl.innerHTML = `
 
 	  <div class="thumbnail-container">
-  		<div class="thumbnail">
    		<iframe id="frameid" src= "https://www.walla.co.il" frameborder="0" style="position: absolute; width:100%;  height:100%;" onclick= ></iframe>
-  		</div>
-	</div>
+	  </div>
 	 
 	`;
 	
@@ -27,9 +25,9 @@
 				console.log("window opened");
 			}, false);
 
-			this.getElementById("frameid").addEventListener("click", function() {
+			document.getElementById("frameid").addEventListener("click", function() {
 				window.open(this._urlLink,"_blank");
-				console.log("window opened");
+				console.log("window opened frame");
 			}, false);
 			
 			//this._urlLink = "https://www.sap.com/index.html";	
