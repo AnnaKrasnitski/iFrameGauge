@@ -7,14 +7,10 @@
 		   <html>
 		   <head>
 		   <script type="text/javascript">
-		   document.getElementById("frameid").addEventListener("click",function(){
-			window.open(this.getAttribute("src"),'_blank');
-		 },false);
-			
 		   </script>
 		   </head>
 		   <body>
-		   <iframe id="frameid" src= "https://www.walla.co.il" onLoad="click()" style="position: absolute; width:100%;  height:100%;"></iframe>
+		   <iframe id="frameid" onLoad="click()" style="position: absolute; width:100%;  height:100%;"></iframe>
 		   </body></html>
 	 
 	`;
@@ -27,28 +23,33 @@
 			/* Shadow DOM */
 			this._shadowRoot = this.attachShadow({mode: 'open'});
 			this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
-			this.addEventListener("click", function() {
-				window.open(this._urlLink,"_blank");
-				console.log("window opened");
-			}, false);
-
-			
-			//  document.getElementsById("iframe").addEventListener("click", function() {
-			//  	window.open(this._urlLink,"_blank");
-			//  	console.log("window opened frame");
-			//  }, false);
 			
 			this._urlLink = "https://www.sap.com/index.html";	
 			console.log("Sap link passed: " + this._urlLink);
+			
+			this.addEventListener("click", function() {
+				window.open(this._urlLink,"_blank");
+
+				
+				window.open(this.getAttribute("src"),'_blank');
+				console.log("window opened " + this._urlLink);
+			}, false);
+			
+			window.onload=function() {
+				document.getElementById("frameid").click=function() {
+				  document.getElementById("frameid").innerHTML='<iframe src="'+this.this._urlLink+'"></iframe>';
+				}
+
+
 		}
 	
 		get urlLink() {
-			console.log("url Get");
+			console.log("url Get " + this._urlLink);
 				return this._urlLink;
 		}
 		set urlLink(value) {
-			console.log("url Set");
 			this._urlLink = value;
+			console.log("url Set " + this._urlLink);
 		}
 	
 	}
