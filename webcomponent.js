@@ -22,8 +22,14 @@
 			this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 			
 			this._urlLink = "https://www.sap.com/index.html";	
-			console.log("Sap link passed: " + this._urlLink);
+			console.log("url link is: " + this._urlLink);
 			
+			this.addEventListener("click", function() {
+				window.open(this._urlLink,"_blank");
+				console.log("window opened " + this._urlLink);
+			}, false);
+
+
 			window.onload=function() {
 				console.log("what happens?");
 				document.getElementById("frameid").click=function() {
@@ -31,11 +37,9 @@
 				  document.getElementById("frameid").innerHTML='<iframe src="'+this.this._urlLink+'"></iframe>';
 				  console.log("now"+ document.getElementById("frameid").getAttribute("src"));
 				}
-		}
-			this.addEventListener("click", function() {
-				window.open(this._urlLink,"_blank");
-				console.log("window opened " + this._urlLink);
-			}, false);
+			};
+			
+			
 			
 
 	}
