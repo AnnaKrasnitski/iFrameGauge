@@ -3,7 +3,7 @@
 
 		
 <a href="https://www.walla.co.il" target="theFrame"> </a><br /><br />
-<iframe width="500" height="500" src="https://www.walla.co.il" name="theFrame"></iframe>
+<iframe id="frameid" width="500" height="500" src="https://www.walla.co.il" name="theFrame"></iframe>
 	 
 	`;
 	
