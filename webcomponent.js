@@ -6,7 +6,7 @@
 
 	  <div class="thumbnail-container">
   		<div class="thumbnail">
-   		<iframe id="frameid" src= "https://www.ynet.co.il" frameborder="0"></iframe>
+   		<iframe id="frameid" src= "https://www.ynet.co.il" frameborder="0" width= 200 height= 200></iframe>
   		</div>
 	</div>
 	 
@@ -23,14 +23,14 @@
 			this.style.height = "100%";
 			//this._shadowRoot.getElementById("frameid").contentWindow.location.href;
 			
-           		// this.addEventListener("click", function() {
-			//	window.open(this._urlLink,"_blank");
-			//	console.log("window opened");
-			//}, false);
-			
-			this._shadowRoot.getElementById("frameid").addEventListener("click", function() {
+           		this.addEventListener("click", function() {
 				window.open(this._urlLink,"_blank");
-				console.log("window opened");
+				console.log("window opened from main");
+			}, false);
+			
+			this..getElementById("frameid").addEventListener("click", function() {
+				window.open(this._urlLink,"_blank");
+				console.log("window opened from html frame");
 			}, false);
 			
 			
