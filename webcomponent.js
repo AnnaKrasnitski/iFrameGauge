@@ -6,7 +6,7 @@
 
 	  <div class="thumbnail-container">
   		<div class="thumbnail">
-   		<iframe id="frameid" src= "https://www.walla.co.il" frameborder="0"></iframe>
+   		<iframe id="frameid" src= "https://www.ynet.co.il" frameborder="0"></iframe>
   		</div>
 	</div>
 	 
@@ -21,12 +21,18 @@
 			this._shadowRoot = this.attachShadow({mode: 'open'});
 			this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 			this.style.height = "100%";
-			this._shadowRoot.getElementById("frameid").contentWindow.location.href;
+			//this._shadowRoot.getElementById("frameid").contentWindow.location.href;
 			
-           		 this.addEventListener("click", function() {
+           		// this.addEventListener("click", function() {
+			//	window.open(this._urlLink,"_blank");
+			//	console.log("window opened");
+			//}, false);
+			
+			this._shadowRoot.getElementById("frameid").addEventListener("click", function() {
 				window.open(this._urlLink,"_blank");
 				console.log("window opened");
 			}, false);
+			
 			
 			//this._urlLink = "https://www.sap.com/index.html";	
 			console.log("Sap link passed: " + this._urlLink);
