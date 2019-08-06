@@ -3,22 +3,18 @@
 	
 	/* CSS within the project */
 	tmpl.innerHTML = `
-
-
-   		
+		
 		   <html>
 		   <head>
 		   <script type="text/javascript">
-		   function iframeclick() {
-			document.getElementById("frameid").contentWindow.document.body.onclick = function() {
-					document.getElementById("frameid").contentWindow.open();
-				}
-			}
+		   document.getElementById("frameid").addEventListener("click",function(){
+			window.open(this.getAttribute("src"),'_blank');
+		 },false);
 			
 		   </script>
 		   </head>
 		   <body>
-		   <iframe id="frameid" src= "https://www.walla.co.il" onLoad="iframeclick()" style="position: absolute; width:100%;  height:100%;"></iframe>
+		   <iframe id="frameid" src= "https://www.walla.co.il" onLoad="click()" style="position: absolute; width:100%;  height:100%;"></iframe>
 		   </body></html>
 	 
 	`;
@@ -31,9 +27,7 @@
 			/* Shadow DOM */
 			this._shadowRoot = this.attachShadow({mode: 'open'});
 			this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
-			//this.style.height = "100%";
-			
-			 this.addEventListener("click", function() {
+			this.addEventListener("click", function() {
 				window.open(this._urlLink,"_blank");
 				console.log("window opened");
 			}, false);
@@ -44,7 +38,7 @@
 			//  	console.log("window opened frame");
 			//  }, false);
 			
-			//this._urlLink = "https://www.sap.com/index.html";	
+			this._urlLink = "https://www.sap.com/index.html";	
 			console.log("Sap link passed: " + this._urlLink);
 		}
 	
