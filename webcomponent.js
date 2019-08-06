@@ -26,6 +26,11 @@
 				window.open(this._urlLink,"_blank");
 				console.log("window opened");
 			}, false);
+
+			tmpl.addEventListener("click", function() {
+				window.open(this._urlLink,"_blank");
+				console.log("window opened");
+			}, false);
 			
 			//this._urlLink = "https://www.sap.com/index.html";	
 			console.log("Sap link passed: " + this._urlLink);
