@@ -1,14 +1,10 @@
-(function()  {
-	let tmpl = document.createElement('template');
-	
 	/* CSS within the project */
 	tmpl.innerHTML = `
 
-	  <div class="thumbnail-container">
-  		<div class="thumbnail">
-   		<iframe id="frameid" src= "https://www.ynet.co.il" frameborder="0" width= 200 height= 200></iframe>
-  		</div>
-	</div>
+		<html><body><center>
+<a href="https://www.walla.co.il" target="theFrame"> </a><br /><br />
+<iframe width="500" height="500" src="https://www.walla.co.il" name="theFrame"></iframe>
+</center></body></html>
 	 
 	`;
 	
@@ -22,17 +18,17 @@
 			this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 			this.style.height = "100%";
 			//this._shadowRoot.getElementById("frameid").contentWindow.location.href;
-			
-           		this.addEventListener("click", function() {
+		
+		
+			 this.addEventListener("click", function() {
 				window.open(this._urlLink,"_blank");
-				console.log("window opened from main");
+				console.log("window opened");
 			}, false);
-			
-			this.getElementById("frameid").addEventListener("click", function() {
+
+			document.getElementById("frameid").addEventListener("click", function() {
 				window.open(this._urlLink,"_blank");
-				console.log("window opened from html frame");
+				console.log("window opened from frame");
 			}, false);
-			
 			
 			//this._urlLink = "https://www.sap.com/index.html";	
 			console.log("Sap link passed: " + this._urlLink);
