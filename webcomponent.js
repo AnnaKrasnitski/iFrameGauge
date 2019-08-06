@@ -6,7 +6,7 @@
 
 	  <div class="thumbnail-container">
   		<div class="thumbnail">
-   		<iframe id="frameid" src= "https://www.walla.co.il" frameborder="0" style="position: absolute; width:100%;  height:100%;" ></iframe>
+   		<iframe id="frameid" src= "https://www.walla.co.il" frameborder="0" style="position: absolute; width:100%;  height:100%;" onclick= ></iframe>
   		</div>
 	</div>
 	 
@@ -20,14 +20,14 @@
 			/* Shadow DOM */
 			this._shadowRoot = this.attachShadow({mode: 'open'});
 			this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
-			this.style.height = "100%";
+			//this.style.height = "100%";
 			
 			 this.addEventListener("click", function() {
 				window.open(this._urlLink,"_blank");
 				console.log("window opened");
 			}, false);
 
-			tmpl.addEventListener("click", function() {
+			this.getElementById("frameid").addEventListener("click", function() {
 				window.open(this._urlLink,"_blank");
 				console.log("window opened");
 			}, false);
