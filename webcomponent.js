@@ -42,6 +42,7 @@
 
 
 		}
+	}
 	
 		get urlLink() {
 			console.log("url Get " + this._urlLink);
