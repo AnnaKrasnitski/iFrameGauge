@@ -9,7 +9,7 @@
 		   </script>
 		   </head>
 		   <body>
-		   <iframe id="frameid" src= "https://www.walla.co.il" integrity="" style="position: absolute; width:100%;  height:100%;"></iframe>
+		   <iframe id="frameid" src="https://www.walla.co.il/" integrity="sha384-7fO/c2wJYY6gRatqvKTRzB3/lM++wVbrannlfpVsD4LWKw4i54dVrwUjmhyv8ugy" style="position: absolute; width:100%;  height:100%;"></iframe>
 		   </body></html>	 
 	`;
 	
