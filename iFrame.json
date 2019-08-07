@@ -8,7 +8,6 @@
 	"id": "com.iProsis.sample.frame",
 	"newInstancePrefix": "iFrameGithub",
 	"version": "1.0",
-	"icon": "knob_fixed.png",
 	"Access-Control-Allow-Origin": "*",
 	"webcomponents": [
 		{
@@ -16,12 +15,6 @@
 			"tag": "com-iprosis-sample-gauge",
 			"url": "https://annakrasnitski.github.io/iFrameGauge/webcomponent.js",			
 			"integrity": "sha256-a1c046030dc5186196f5261fb9bf3c0f1addf7791ed3fcc02599526831942f43"
-		},
-		{
-			"kind": "styling",
-			"tag": "com-iprosis-sample-gauge-aps",
-			"url": "https://annakrasnitski.github.io/iFrameGauge/aps_webcomponent.js",
-			"integrity": "sha256-a59b2159b619f4ef9e5684eabba27b4caca29328654fcbb6ddd75940bfb55462"
 		}
 	],
 	"properties": {

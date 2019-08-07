@@ -9,7 +9,8 @@
 		   </script>
 		   </head>
 		   <body>
-		   <iframe id="frameid" src="https://www.walla.co.il/" integrity="106ff17f82322b5e6e24ad6d3292d854922ad74ebfb72a81a7a0ef5a4b8381d1" style="position: absolute; width:100%;  height:100%;"></iframe>
+		   <div id=iframeDiv>
+		   <iframe id="frameid" src="https://www.sap.com/index.html" integrity="d913075799a07f76c5e23254f5dcb29a64125332ddea9c537b9cb2a4e160ff4e" style="position: absolute; width:100%;  height:100%;"></iframe></div>
 		   </body></html>	 
 	`;
 	
@@ -36,7 +37,7 @@
 			// 	document.getElementById("iframeDiv").click=function() {
 			// 		console.log("want to know");
 			// 	    document.getElementById("frameid").innerHTML='<iframe src="'+this.this._urlLink+'"></iframe>';
-			// 	  console.log("now"+ document.getElementById("frameid").getAttribute("src"));
+			// 	  console.log("what happen 222"+ document.getElementById("frameid").getAttribute("src"));
 			// 	}
 			// };
 					
