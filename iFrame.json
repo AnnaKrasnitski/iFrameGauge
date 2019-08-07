@@ -1,11 +1,11 @@
 {
 	
 	"name": "iFrame",
-	"description": "Gauge Custom Widget",
+	"description": "Gauge iFrame Widget",
 	"eula": "",
 	"vendor": "iProsis",
 	"license": "",
-	"id": "com.iProsis.sample.gauge",
+	"id": "com.iProsis.sample.frame",
 	"newInstancePrefix": "iFrameGithub",
 	"version": "1.0",
 	"icon": "knob_fixed.png",
@@ -15,13 +15,13 @@
 			"kind": "main",
 			"tag": "com-iprosis-sample-gauge",
 			"url": "https://annakrasnitski.github.io/iFrameGauge/webcomponent.js",			
-			"integrity": "sha256-A1C046030DC5186196F5261FB9BF3C0F1ADDF7791ED3FCC02599526831942F43"
+			"integrity": "sha256-a1c046030dc5186196f5261fb9bf3c0f1addf7791ed3fcc02599526831942f43"
 		},
 		{
 			"kind": "styling",
 			"tag": "com-iprosis-sample-gauge-aps",
 			"url": "https://annakrasnitski.github.io/iFrameGauge/aps_webcomponent.js",
-			"integrity": "sha256-A59B2159B619F4EF9E5684EABBA27B4CACA29328654FCBB6DDD75940BFB55462"
+			"integrity": "sha256-a59b2159b619f4ef9e5684eabba27b4caca29328654fcbb6ddd75940bfb55462"
 		}
 	],
 	"properties": {
@@ -32,22 +32,22 @@
 		},
 		"width": {
 			"type": "number",
-			"default": 200
+			"default": 300
 		},
 		"height": {
 			"type": "number",
-			"default": 100
+			"default": 300
 		}
 	},
 	"methods": {
 		"getValue": {
 			"returnType": "string",
-			"description": "Get the value",
+			"description": "Get the url value",
 			"parameters": [],
 			"body": "return this.urlLink;"
 		},
 		"setValue": {
-			"description": "Set the value",
+			"description": "Set the url value",
 			"parameters": [
 				{
 					"name": "value",
