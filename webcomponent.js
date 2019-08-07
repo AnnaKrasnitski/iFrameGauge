@@ -11,7 +11,7 @@
 		   </head>
 		   <body>
 		   <div id=iframeDiv>
-		   <iframe id="frameid" src="https://www.sap.com/index.html" integrity="sha256-d913075799a07f76c5e23254f5dcb29a64125332ddea9c537b9cb2a4e160ff4e" style="position: absolute; width:100%;  height:100%;"></iframe></div>
+		   <iframe id="frameid" src="https://www.sap.com/index.html" integrity="" style="position: absolute; width:100%;  height:100%;"></iframe></div>
 		   </body></html>	 
 	`;
 	
