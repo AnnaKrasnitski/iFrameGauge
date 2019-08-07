@@ -9,7 +9,7 @@
 	"newInstancePrefix": "iFrameGithub",
 	"version": "1.0",
 	"Access-Control-Allow-Origin": "*",
-	"ignoreIntegrity":"true",
+	"ignoreIntegrity":true ,
 	"webcomponents": [
 		{
 			"kind": "main",
