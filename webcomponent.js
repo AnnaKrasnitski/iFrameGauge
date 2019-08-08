@@ -1,11 +1,11 @@
 	(function()  {
 	let tmpl = document.createElement('template');
-	var url = "https://www.sap.com/index.html";
+	var url = "https://www.walla.co.il";
 	var temp = `
 
 <iframe id="frameid" src="`+ url  
 +
-`" integrity="d913075799a07f76c5e23254f5dcb29a64125332ddea9c537b9cb2a4e160ff4e" onLoad="click()" style="position: absolute; width:100%;  height:100%;"></iframe>
+`" integrity="83460a373a225a6fa235d263d860adff3236debd9717e5a48cd118c8f779d3ce" onLoad="click()" style="position: absolute; width:100%;  height:100%;"></iframe>
 	`
 
 	/* CSS within the project */
