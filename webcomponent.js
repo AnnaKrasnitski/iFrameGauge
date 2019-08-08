@@ -11,7 +11,7 @@
 		   </head>
 		   <body>
 		   <div id=iframeDiv>
-		   <iframe id="frameid" src="https://www.walla.co.il" integrity="SHA256-83460a373a225a6fa235d263d860adff3236debd9717e5a48cd118c8f779d3ce" style="position: absolute; width:100%;  height:100%;"></iframe></div>
+		   <iframe id="frameid" src="https://www.walla.co.il" integrity="83460a373a225a6fa235d263d860adff3236debd9717e5a48cd118c8f779d3ce" style="position: absolute; width:100%;  height:100%;"></iframe></div>
 		   </body></html>	 
 	`;
 	
