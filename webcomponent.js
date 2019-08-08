@@ -27,13 +27,13 @@
 			this._urlLink = "https://www.sap.com/index.html";	
 			console.log("url link is: " + this._urlLink);
 			
+			// this.addEventListener("click", function() {
+			// 	window.open(this._urlLink,"_blank");
+			// 	console.log("window opened " + this._urlLink);
+			// }, false);
+
+
 			this.addEventListener("click", function() {
-				window.open(this._urlLink,"_blank");
-				console.log("window opened " + this._urlLink);
-			}, false);
-
-
-			window.onload=function() {
 				console.log("what happens?");
 				tmpl.getElementById("iframeDiv").click=function() {
 					console.log("want to know");
