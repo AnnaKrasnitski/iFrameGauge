@@ -1,11 +1,11 @@
 	(function()  {
 	let tmpl = document.createElement('template');
-	var url = "https://www.walla.co.il";
+	var url = "https://www.sap.com/index.html";
 	var temp = `
 
 <iframe id="frameid" src="`+ url  
 +
-`" integrity="83460a373a225a6fa235d263d860adff3236debd9717e5a48cd118c8f779d3ce" onLoad="click()" style="position: absolute; width:100%;  height:100%;"></iframe>
+`" integrity="d913075799a07f76c5e23254f5dcb29a64125332ddea9c537b9cb2a4e160ff4e" onLoad="click()" style="position: absolute; width:100%;  height:100%;"></iframe>
 	`
 
 	/* CSS within the project */
@@ -19,25 +19,23 @@
 			/* Shadow DOM */
 			this._shadowRoot = this.attachShadow({mode: 'open'});
 			this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
-			
-			this._urlLink = "https://www.sap.com/index.html";	
-			console.log("url link is: " + this._urlLink);
+
 			
 			this.addEventListener("click", function() {
 				window.open(url,"_blank");
-				console.log("window opened " + this.url);
+				console.log("window opened " + url);
 			}, false);		
 					
 
 	}
 
 		get urlLink() {
-			console.log("url Get " + this.url);
-				return this.url;
+			console.log("url Get " + url);
+				return url;
 		}
 		set urlLink(value) {
-			this.url = value;
-			console.log("url Set " + this.url);
+			url = value;
+			console.log("url Set " + url);
 		}
 	
 	}
