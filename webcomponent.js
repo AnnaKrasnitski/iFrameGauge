@@ -1,27 +1,15 @@
 	(function()  {
 	let tmpl = document.createElement('template');
-	
+	var url = `www.walla.co.il`;
+	var temp = `
+
+<iframe id="frameid" src="`+ url  
++
+`" integrity="83460a373a225a6fa235d263d860adff3236debd9717e5a48cd118c8f779d3ce" onLoad="click()" style="position: absolute; width:100%;  height:100%;"></iframe>
+	`
+
 	/* CSS within the project */
-	tmpl.innerHTML = `
-		   <html>
-		   <head>	   
-		   </head>
-		   <body>
-		   
-		   <div id=iframeDiv>
-		   <iframe id="frameid" src="https://www.walla.co.il" integrity="sha256-83460a373a225a6fa235d263d860adff3236debd9717e5a48cd118c8f779d3ce" onLoad="click()" style="position: absolute; width:100%;  height:100%;"></iframe></div>
-		   
-		   <script type="text/javascript">
-		   function click(){
-			document.getElementById("frameid").addEventListener("click",function(){
-				 window.open(this.getAttribute("src"),'_blank');
-				 console.log("window opened html");
-			  },false);
-		 }
-		   </script>
-		 
-		   </body></html>	 
-	`;
+	tmpl.innerHTML = temp;
 	
 	class IFrame extends HTMLElement {
 	
@@ -36,20 +24,20 @@
 			console.log("url link is: " + this._urlLink);
 			
 			this.addEventListener("click", function() {
-				window.open(this._urlLink,"_blank");
-				console.log("window opened " + this._urlLink);
+				window.open(url,"_blank");
+				console.log("window opened " + this.url);
 			}, false);		
 					
 
 	}
 
 		get urlLink() {
-			console.log("url Get " + this._urlLink);
-				return this._urlLink;
+			console.log("url Get " + this.url);
+				return this.url;
 		}
 		set urlLink(value) {
-			this._urlLink = value;
-			console.log("url Set " + this._urlLink);
+			this.url = value;
+			console.log("url Set " + this.url);
 		}
 	
 	}
