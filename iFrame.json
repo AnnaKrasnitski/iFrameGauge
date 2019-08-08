@@ -21,8 +21,7 @@
 	"properties": {
 		"urlLink": {
 			"type": "string",
-			"description": "url link",
-			"default": "https://www.sap.com/index.html"
+			"description": "url link"
 		},
 		"width": {
 			"type": "number",
