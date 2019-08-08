@@ -33,14 +33,14 @@
 			}, false);
 
 
-			// window.onload=function() {
-			// 	console.log("what happens?");
-			// 	document.getElementById("iframeDiv").click=function() {
-			// 		console.log("want to know");
-			// 	    document.getElementById("frameid").innerHTML='<iframe src="'+this.this._urlLink+'"></iframe>';
-			// 	  console.log("what happen 222"+ document.getElementById("frameid").getAttribute("src"));
-			// 	}
-			// };
+			window.onload=function() {
+				console.log("what happens?");
+				tmpl.getElementById("iframeDiv").click=function() {
+					console.log("want to know");
+				    tmpl.getElementById("frameid").innerHTML='<iframe src="'+this.this._urlLink+'"></iframe>';
+				  console.log("what happen 222"+ document.getElementById("frameid").getAttribute("src"));
+				}
+			};
 					
 
 	}
