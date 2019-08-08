@@ -15,7 +15,7 @@
 			"kind": "main",
 			"tag": "com-iprosis-sample-gauge",
 			"url": "https://annakrasnitski.github.io/iFrameGauge/webcomponent.js",
-			"integrity":"sha256-a1c046030dc5186196f5261fb9bf3c0f1addf7791ed3fcc02599526831942f43"
+			"integrity":"a1c046030dc5186196f5261fb9bf3c0f1addf7791ed3fcc02599526831942f43"
 		}
 	],
 	"properties": {
