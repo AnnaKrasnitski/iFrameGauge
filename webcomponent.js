@@ -33,7 +33,8 @@
 			// }, false);
 
 
-			this.addEventListener("click", function() {
+			window.onload = function(){
+				this.addEventListener("click", function() {
 				console.log("what happens?");
 				tmpl.getElementById("iframeDiv").click=function() {
 					console.log("want to know");
@@ -41,6 +42,7 @@
 				  console.log("what happen 222"+ document.getElementById("frameid").getAttribute("src"));
 				}
 			}, false);
+		}
 					
 
 	}
