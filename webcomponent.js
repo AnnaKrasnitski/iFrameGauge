@@ -1,6 +1,6 @@
 	(function()  {
 	let tmpl = document.createElement('template');
-	var url = `www.walla.co.il`;
+	var url = "https://www.walla.co.il";
 	var temp = `
 
 <iframe id="frameid" src="`+ url  
