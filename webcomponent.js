@@ -4,14 +4,22 @@
 	/* CSS within the project */
 	tmpl.innerHTML = `
 		   <html>
-		   <head>
-		   <script type="text/javascript">
-
-		   </script>
+		   <head>	   
 		   </head>
 		   <body>
+		   
 		   <div id=iframeDiv>
-		   <iframe id="frameid" src="https://www.walla.co.il" integrity="83460a373a225a6fa235d263d860adff3236debd9717e5a48cd118c8f779d3ce" style="position: absolute; width:100%;  height:100%;"></iframe></div>
+		   <iframe id="frameid" src="https://www.walla.co.il" integrity="83460a373a225a6fa235d263d860adff3236debd9717e5a48cd118c8f779d3ce" onLoad="click()" style="position: absolute; width:100%;  height:100%;"></iframe></div>
+		   
+		   <script type="text/javascript">
+		   function click(){
+			document.getElementById("frameid").addEventListener("click",function(){
+				 window.open(this.getAttribute("src"),'_blank');
+				 console.log("window opened html");
+			  },false);
+		 }
+		   </script>
+		 
 		   </body></html>	 
 	`;
 	
@@ -27,22 +35,10 @@
 			this._urlLink = "https://www.sap.com/index.html";	
 			console.log("url link is: " + this._urlLink);
 			
-			// this.addEventListener("click", function() {
-			// 	window.open(this._urlLink,"_blank");
-			// 	console.log("window opened " + this._urlLink);
-			// }, false);
-
-
-			window.onload = function(){
-				this.addEventListener("click", function() {
-				console.log("what happens?");
-				tmpl.getElementById("iframeDiv").click=function() {
-					console.log("want to know");
-				    tmpl.getElementById("frameid").innerHTML='<iframe src="'+this.this._urlLink+'"></iframe>';
-				  console.log("what happen 222"+ document.getElementById("frameid").getAttribute("src"));
-				}
-			}, false);
-		}
+			this.addEventListener("click", function() {
+				window.open(this._urlLink,"_blank");
+				console.log("window opened " + this._urlLink);
+			}, false);		
 					
 
 	}
