@@ -21,7 +21,7 @@
 			this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 
 			
-			this.addEventListener("click", function() {
+			tmpl.addEventListener("click", function() {
 				window.open(url,"_blank");
 				console.log("window opened " + url);
 			}, false);		
