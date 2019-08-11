@@ -19,13 +19,10 @@
 			/* Shadow DOM */
 			this._shadowRoot = this.attachShadow({mode: 'open'});
 			this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
-
-			
 			tmpl.addEventListener("click", function() {
 				window.open(url,"_blank");
 				console.log("window opened " + url);
-			}, false);		
-					
+			}, false);			
 
 	}
 
@@ -44,7 +41,14 @@
 			`
 			tmpl.innerHTML = temp;
 			this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
+
+			tmpl.addEventListener("click", function() {
+				window.open(url,"_blank");
+				console.log("window opened " + url);
+			}, false);	
 		}
+
+		
 	
 	}
 	  /* Define web component - input: tag and class */
