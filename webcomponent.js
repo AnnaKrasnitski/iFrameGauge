@@ -4,7 +4,7 @@
 	var temp = `
 	<iframe id="frameid" src="`+ url  
 	+
-	`" integrity="sha256-83460a373a225a6fa235d263d860adff3236debd9717e5a48cd118c8f779d3ce" style="position: absolute; width:100%;  height:100%;"></iframe>
+	`" integrity="" style="position: absolute; width:100%;  height:100%;"></iframe>
 	`
 
 	/* CSS within the project */
@@ -35,7 +35,7 @@
 			 temp = `
 			<iframe id="frameid" src="`+ url  
 			+
-			`" integrity="sha256-83460a373a225a6fa235d263d860adff3236debd9717e5a48cd118c8f779d3ce" style="position: absolute; width:100%;  height:100%;"></iframe>
+			`" integrity="" style="position: absolute; width:100%;  height:100%;"></iframe>
 			`
 			tmpl.innerHTML = temp;
 			this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
