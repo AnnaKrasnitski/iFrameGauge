@@ -1,10 +1,10 @@
 	(function()  {
 	let tmpl = document.createElement('template');
-	var url = "https://www.walla.co.il";
+	var url = "https://www.ynet.co.il/home/0,7340,L-8,00.html";
 	var temp = `
 	<iframe id="frameid" src="`+ url  
 	+
-	`" integrity="sha256-83460a373a225a6fa235d263d860adff3236debd9717e5a48cd118c8f779d3ce" style="position: absolute; width:100%;  height:100%;"></iframe>
+	`" integrity="sha256-020A96F144D569CB92D4AEEB71FC32A23A6DF25B034269F7D1334C42881C1C84" style="position: absolute; width:100%;  height:100%;"></iframe>
 	`
 
 	/* CSS within the project */
@@ -35,7 +35,7 @@
 			 temp = `
 			<iframe id="frameid" src="`+ url  
 			+
-			`" integrity="sha256-83460a373a225a6fa235d263d860adff3236debd9717e5a48cd118c8f779d3ce" style="position: absolute; width:100%;  height:100%;"></iframe>
+			`" integrity="sha256-020A96F144D569CB92D4AEEB71FC32A23A6DF25B034269F7D1334C42881C1C84" style="position: absolute; width:100%;  height:100%;"></iframe>
 			`
 			tmpl.innerHTML = temp;
 			this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
