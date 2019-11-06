@@ -4,7 +4,8 @@
 	var temp = `
 	<iframe id="frameid" src="`+ url  
 	+
-	`" integrity="sha256-020A96F144D569CB92D4AEEB71FC32A23A6DF25B034269F7D1334C42881C1C84" style="position: absolute; width:100%;  height:100%;"></iframe>
+	`" integrity="sha384-95f38c1680a29401b44f0ef0811c39648e5ccb754c4f931da891a2e8cdda787d03884570330c0534bdf19ea647438305
+" style="position: absolute; width:100%;  height:100%;"></iframe>
 	`
 
 	/* CSS within the project */
@@ -35,7 +36,8 @@
 			 temp = `
 			<iframe id="frameid" src="`+ url  
 			+
-			`" integrity="sha256-020A96F144D569CB92D4AEEB71FC32A23A6DF25B034269F7D1334C42881C1C84" style="position: absolute; width:100%;  height:100%;"></iframe>
+			`" integrity="sha384-95f38c1680a29401b44f0ef0811c39648e5ccb754c4f931da891a2e8cdda787d03884570330c0534bdf19ea647438305
+" style="position: absolute; width:100%;  height:100%;"></iframe>
 			`
 			tmpl.innerHTML = temp;
 			this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
