@@ -1,21 +1,20 @@
 {
 	
-	"name": "iFrame",
+	"name": "iFrameH",
 	"description": "Gauge iFrame Widget",
 	"eula": "",
 	"vendor": "iProsis",
 	"license": "",
 	"id": "com.iProsis.sample.frame",
 	"newInstancePrefix": "iFrameGithub",
-	"version": "1.0",
-	"Access-Control-Allow-Origin": "*",
-	"ignoreIntegrity":true ,
+	"icon" : "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Godot_icon.svg/600px-Godot_icon.svg.png",
+	"version": "1.0.0",
 	"webcomponents": [
 		{
 			"kind": "main",
 			"tag": "com-iprosis-sample-gauge",
 			"url": "https://annakrasnitski.github.io/iFrameGauge/webcomponent.js",
-			"integrity":"a1c046030dc5186196f5261fb9bf3c0f1addf7791ed3fcc02599526831942f43"
+			"integrity":"sha384-IA+fOB0HA5h3xQtlenW6NK515f+J3R0hnPKav9ZmZy6YcE4R8JEzp5qstTv6WCAF"
 		}
 	],
 	"properties": {
